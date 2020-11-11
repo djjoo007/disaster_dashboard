@@ -1,5 +1,4 @@
 {
-  "name": "Disaster Dashboard",
   "version": "1.0.0",
   "description": "Disaster Dashboard",
   "main": "server.js",
