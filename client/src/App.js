@@ -7,6 +7,7 @@ import Home from './components/pages/Home';
 import Staff from './components/pages/Staff';
 import Login from './components/auth/Login';
 import Disasters from './components/disasters';
+import RandomGif from './components/pages/Puppies.js'
 
 import './App.css';
 
@@ -37,6 +38,7 @@ class App extends Component {
               />
               <Route path="/implicit/callback" component={ImplicitCallback} />
               <Route path="/disasters" component={Disasters}></Route>
+              <Route path="/puppies" exact={true} component={RandomGif} />
             </div>
           </div>
         </Security>
