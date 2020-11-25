@@ -31,7 +31,7 @@ const mm = prevDate.getMonth();
 const dd = prevDate.getDate();
 const dateAsOf = yyyy + "-" + mm + "-" + dd;
 
-console.log(dateAsOf);
+// console.log(dateAsOf);
 
 //create a dropdown of state names with abbreviations
 const state = $("#state-input");
@@ -44,10 +44,10 @@ $.ajax({
 }).then(function(response) {
 
   const newCases = response.new_case;
-  console.log(newCases);
+  // console.log(newCases);
 
   const newDeaths = response.new_death;
-  console.log(newDeaths);
+  // console.log(newDeaths);
 
 });
 };

@@ -38,7 +38,7 @@ class CovidSearchResults extends Component {
     if (this.state.result.length === 0 ) {
       return null;
     }
-    console.log(this.state.result);
+    // console.log(this.state.result);
     return (
             <CovidCard
               heading= "Search for a US State"

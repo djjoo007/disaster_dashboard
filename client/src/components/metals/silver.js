@@ -19,7 +19,6 @@ class Silver extends React.Component {
   loadImage() {
 var myHeaders = new Headers();
 myHeaders.append("x-access-token",  'process.env.REACT_APP_METALAPIS');
-console.log(process)
 myHeaders.append("Content-Type", "application/json");
 
 var requestOptions = {

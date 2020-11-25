@@ -7,6 +7,7 @@ import Meteroids from '../meteroids/meteroids.js';
 import Disasters from '../../components/disasters';
 import { ListItem } from "../list";
 import CovidSearchResults from '../covid/CovidSearchResults.js';
+import SimpleMap from '../map/map.js'
 
 class Dashboard extends Component {
   constructor(props) {
@@ -15,7 +16,6 @@ class Dashboard extends Component {
       currentUserName: JSON.parse(localStorage.getItem('okta-token-storage')).idToken.claims.name
     };
   }
-
   render() {
     return (
       <div>
@@ -57,7 +57,11 @@ class Dashboard extends Component {
           </div>
           <br></br>
 
+          <div id="main">
+          <SimpleMap/>
+          </div>
 
+          <br></br>
         <div id='app'></div>
           <div className="card" id = 'disaster'>
           <h3 className="mb-3 mt-3"><img src={process.env.PUBLIC_URL + '/assets/images/disasters.png'}  alt = 'disasters' />Disasters</h3>
