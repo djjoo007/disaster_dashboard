@@ -7,6 +7,7 @@ import Meteroids from '../meteroids/meteroids.js';
 import Disasters from '../../components/disasters';
 import { ListItem } from "../list";
 import CovidSearchResults from '../covid/CovidSearchResults.js';
+import SimpleMap from '../map/map';
 
 class Dashboard extends Component {
   constructor(props) {
@@ -63,6 +64,9 @@ class Dashboard extends Component {
           <h3 className="mb-3 mt-3"><img src={process.env.PUBLIC_URL + '/assets/images/disasters.png'}  alt = 'disasters' />Disasters</h3>
               <Disasters></Disasters>
           </div>
+
+          <br></br>
+<SimpleMap/>
           <br></br>
 
           <div id='app'></div>
