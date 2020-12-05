@@ -9,7 +9,7 @@ class Meteroid extends React.Component {
     this.state = {
       apiKey: `${process.env.REACT_APP_METEORS}`,
       apiResults: [],
-      todayDate : moment().format('YYYY-MM-DD')
+      todayDate : '2020-12-04'
     };
   }
   componentDidMount() {
@@ -62,10 +62,6 @@ class Meteroid extends React.Component {
       <div>
         {this.state.apiResults.length ? (
           <List>
-
-            <h3 className="mb-3 mt-3" ><img
-              src={process.env.PUBLIC_URL + '/assets/images/comet.png'}
-              alt = 'meteroid'/> Near Earth Events - Today </h3>
             {this.state.apiResults.map((result) => (
               <ListItem key={result.id}>
               Meteor Name:{result.Name} -

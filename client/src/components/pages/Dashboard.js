@@ -76,6 +76,9 @@ class Dashboard extends Component {
 
               <div id="nasa"></div>
               <div className="card">
+              <h3 className="mb-3 mt-3" ><img
+              src={process.env.PUBLIC_URL + '/assets/images/comet.png'}
+              alt = 'meteroid'/> Near Earth Events - Today </h3>
                 <Meteroids />
               </div>
               <br></br>
